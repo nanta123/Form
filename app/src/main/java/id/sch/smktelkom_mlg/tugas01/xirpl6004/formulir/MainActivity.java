@@ -35,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
         etNama = (EditText) findViewById(R.id.editTextNama);
         bDaftar = (Button) findViewById(R.id.buttonDaftar);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
+
+
         bDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nama = etNama.getText().toString();
-
 
                 String jurusan = null;
                 if (rbRpl.isChecked()) {
@@ -49,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 String kelas = "Kelas Anda:\n";
-
                 if (cbX.isChecked()) kelas += cbX.getText() + "\n";
                 if (cbXI.isChecked()) kelas += cbXI.getText() + "\n";
                 if (cbXII.isChecked()) kelas += cbXII.getText() + "\n";
